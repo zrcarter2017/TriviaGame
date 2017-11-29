@@ -32,22 +32,15 @@
 
 		var displayQandA = [];
 
-
-		questions.forEach(function(element) {
+		for (var i = 0; i < questions.length; i++) {
 			
-			console.log(element);
-    		console.log(answers[questions.indexOf(element)]);
-    		displayQandA.push(element);
-    		displayQandA.push(answers[questions.indexOf(element)]);
-    		$("#questions").html(displayQandA);
 
-    	//if user select correct correct ++
-    	//else incorrect ++
+    		$('#questions').append(questions[i] + '<br>' + '<input>' + answers[i] + '</input>' + '<br>');
+    	};
 
-    	
-    	$('#correct').html(correctAnswers);
-    	$('#incorrect').html(incorrectAnswers);
+    		
 
+   
 	</script>
 </body>
 </html>
