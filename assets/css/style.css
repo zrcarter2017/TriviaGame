@@ -1,0 +1,19 @@
+#timer {
+	font-size:50px;
+}
+
+.maincontent{
+	text-align:center;
+
+}
+body{
+background-image: url(../images/background.JPG);
+background-size:cover;
+background-position:center;
+color:white;
+font-size:30px;
+}
+
+.jumbotron{
+	color:black;
+}

@@ -3,44 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 </head>
 <body>
-
 	<div class = "container">
-		<div id = "questions">
-
-		</div>
-		<div id ="correct">
-		</div>
-		<div id ="incorrect">
-		</div>
+	<div class="jumbotron">
+	  <h1 class="display-3">Zach's Trivia Game</h1>
+	  <p class="lead" id="instructions">Type the letter of the correct answer in each box and submit when done (ex. a).</p>
+	  <hr class="my-4">
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="#" role="button" id ="start">Start</a>
+	  </p>
 	</div>
+	<div class="container maincontent">
+		<div id = "timer"></div>
+		<div id = "questions"></div>
+	</div>
+	
+		
+
+
+
+	
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-	<script>
-		var questions = ["What is my favorite animal?", "Where is my favorite place to visit?", "What is my favorite sport to play?", "Which instrument do I play?", "What did I major in at college?", "How many pets do I have?", "What is my favorite holiday?", "What is my favorite season?"];
-
-		var answers = [["tiger", "giraffe", "elephant", "whale"], ["Myrtle Beach", "Nashville", "Disney World", "Charleston, SC"], ["soccer", "basketball", "swimming", "tennis"], ["mandolin", "trumpet", "piano", "guitar"], ["philosophy", "physics", "biology", "economics"], ['1', '2', '3', '4'], ["Easter", "Thanksgiving" , "Christmas", "Independence Day"], ["Winter", "Spring", "Summer", "Fall"]];
-
-		var correctAnswers = 0;
-		var incorrectAnswers = 0;
-
-		var displayQandA = [];
-
-		for (var i = 0; i < questions.length; i++) {
-			
-
-    		$('#questions').append(questions[i] + '<br>' + '<input>' + answers[i] + '</input>' + '<br>');
-    	};
-
-    		
-
-   
+	<script src="assets/javascript/app.js">
 	</script>
 </body>
 </html>
